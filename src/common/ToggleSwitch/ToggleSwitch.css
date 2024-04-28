@@ -1,0 +1,46 @@
+.toggle-container {
+    text-align: center;
+}
+
+h1 {
+    color: green;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 18px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border-radius: 30px;
+    border: 2px solid rgba(128, 128, 128, 0.427);
+}
+
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 2px;
+    left: 1px;
+    transition: all 0.5s;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.checkbox:checked+.toggle::after {
+    left: 13px;
+}
+
+.checkbox:checked+.toggle {
+    background-color: rgb(31, 222, 31);
+}
+
+.checkbox {
+    display: none;
+}

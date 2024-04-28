@@ -1,0 +1,4 @@
+.detailLabelCheckbox checkbox-container,
+.detailLabelCheckbox>label>span {
+    top: 4px !important;
+}

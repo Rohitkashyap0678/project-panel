@@ -1,0 +1,32 @@
+.tabs-container {
+    width: 100%;
+}
+
+.tabs {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+}
+
+.tab {
+    padding: 10px 0px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--tabs-color) !important;
+    width: fit-content;
+}
+
+.tab.active {
+    color: var(--primary-green) !important;
+    font-weight: 600;
+    border-bottom: 4px solid var(--primary-green);
+}
+
+.active-tab-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--primary-green);
+    transition: left 0.3s ease;
+}
